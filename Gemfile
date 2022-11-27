@@ -12,7 +12,9 @@ gem 'puma', '~> 5.0'
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 # gem 'rack-cors'
-
+#foreman allows us to run two servers on for react and another for rails on one termina
+#to use foreman  run 'foreman start -f Procfile.dev
+gem 'foreman'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
